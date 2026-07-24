@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血统之外 · 生命不是家谱 — 买宠物别只看血统</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="theme-color" content="#CE3A22">
+<meta name="description" content="血统可以证明一只动物从哪里来，却不能证明它会健康、温顺，也不能证明它适合你。一份基于 9 篇文献的循证拆解：迷思、数据、COI 实验室、话术翻译、红旗扫描与 12 项清单。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Long+Cang&family=Noto+Sans+SC:wght@400;500;700;900&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="paw" viewBox="0 0 24 24"><path d="M12 12.6c3 0 5.9 2.4 5.9 5 0 1.6-1.3 2.6-2.9 2.6-1.2 0-2-.5-3-.5s-1.8.5-3 .5c-1.6 0-2.9-1-2.9-2.6 0-2.6 2.9-5 5.9-5Zm-5.6-3.5c1-.2 1.9.5 2.1 1.6.2 1.1-.4 2.1-1.3 2.3-1 .2-1.9-.5-2.1-1.6-.2-1 .4-2.1 1.3-2.3Zm3.2-3.7c1.1-.1 2 .8 2.1 1.8.1 1.1-.6 2-1.7 2.1-1 .1-2-.8-2.1-1.8-.1-1.1.7-2 1.7-2.1Zm4.8 0c1 .1 1.8 1 1.7 2.1-.1 1-1 1.9-2.1 1.8-1-.1-1.8-1-1.7-2.1.1-1 1-1.9 2.1-1.8Zm3.2 3.7c.9.2 1.5 1.2 1.3 2.3-.2 1.1-1.1 1.8-2.1 1.6-.9-.2-1.5-1.2-1.3-2.3.2-1.1 1.1-1.8 2.1-1.6Z"/></symbol>
+  <symbol id="ck" viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5"/></symbol>
+  <symbol id="xx" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="4" fill="none"/></symbol>
+  <symbol id="flagic" viewBox="0 0 24 24"><path d="M6 2v20h2.4v-8h9.8l-2.9-4.2L18.2 4H8.4V2H6z"/></symbol>
+</svg>
+
+<div id="pbar"></div>
+
+<nav>
+  <a class="brand" href="#top">
+    <svg><use href="#paw"/></svg>
+    <span><b><span data-zh>血统之外</span><span data-en>Beyond Pedigree</span></b><small data-zh>BEYOND PEDIGREE</small></span>
+  </a>
+  <div class="nlinks">
+    <a href="#myths"><span data-zh>迷思</span><span data-en>Myths</span></a>
+    <a href="#data"><span data-zh>数据</span><span data-en>Data</span></a>
+    <a href="#lab"><span data-zh>实验室</span><span data-en>Lab</span></a>
+    <a href="#translate"><span data-zh>话术</span><span data-en>Spin</span></a>
+    <a href="#flags"><span data-zh>红旗</span><span data-en>Red flags</span></a>
+    <a href="#risks"><span data-zh>风险</span><span data-en>Risks</span></a>
+    <a href="#quiz"><span data-zh>测验</span><span data-en>Quiz</span></a>
+    <button class="lang-btn" id="langBtn" aria-label="Switch language">EN</button>
+    <a class="hot" href="#checklist"><span data-zh>12 项清单</span><span data-en>Checklist</span></a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="fp" style="width:70px;top:8%;right:6%;--r:18deg"><use href="#paw"/></svg>
+  <svg class="fp" style="width:44px;top:22%;left:44%;--r:-24deg;animation-delay:-3s"><use href="#paw"/></svg>
+  <svg class="fp" style="width:56px;bottom:14%;right:38%;--r:40deg;animation-delay:-6s"><use href="#paw"/></svg>
+
+  <div class="rv">
+    <span class="kick"><svg><use href="#paw"/></svg><span data-zh>循证拆解 · 9 篇文献支撑</span><span data-en>Evidence-based teardown · 9 sources</span></span>
+    <h1>
+      <span data-zh><span class="l1">生命</span><span class="l2">不是</span><span class="l3">家谱</span></span>
+      <span data-en><span class="l1">A LIFE</span><span class="l2">IS NOT</span><span class="l3">A PEDIGREE</span></span>
+    </h1>
+    <span class="hand" data-zh>—— 证书查不到的，才最重要 ↘</span>
+    <span class="hand" data-en>— What the certificate can't verify matters most ↘</span>
+    <p class="lede">
+      <span data-zh>血统可以证明一只动物<b>从哪里来</b>，却不能证明它会健康、温顺，也不能证明它适合你。当「纯种」「冠军后代」「赛级血线」被包装成品质指标，你买到的往往不是更可靠的伙伴，而是<b>一套更昂贵的营销叙事</b>。</span>
+      <span data-en>A pedigree proves <b>where an animal came from</b> — not whether it will be healthy, gentle, or right for you. When "purebred", "champion-sired" and "show-line" are packaged as markers of quality, what you're buying is often not a more reliable companion, but <b>a more expensive marketing story</b>.</span>
+    </p>
+    <div class="cta">
+      <a class="btn btn-red" href="#checklist"><span data-zh>先做 12 项清单</span><span data-en>Take the 12-point checklist</span></a>
+      <a class="btn" href="#translate"><span data-zh>拆穿销售话术 ↓</span><span data-en>Decode the sales spin ↓</span></a>
+    </div>
+    <div class="meta-row">
+      <span><span data-zh>5 组迷思</span><span data-en>5 myths</span></span>
+      <span><span data-zh>4 组硬数据</span><span data-en>4 hard datasets</span></span>
+      <span><span data-zh>9 面红旗</span><span data-en>9 red flags</span></span>
+      <span><span data-zh>12 项清单</span><span data-en>12 checks</span></span>
+    </div>
+  </div>
+
+  <div class="cert-wrap rv rv-r" style="--d:.15s" id="certZone">
+    <div class="cert cert-back"></div>
+    <div class="cert cert-front" id="cert">
+      <div class="cert-head">
+        <div class="cert-club"><span data-zh>INTERNATIONAL PET REGISTRY · 国际宠物登记处</span><span data-en>INTERNATIONAL PET REGISTRY</span></div>
+        <h3 class="cert-title"><span data-zh>纯种血统证书</span><span data-en>Pedigree Certificate</span></h3>
+        <div class="cert-en">OFFICIAL PEDIGREE CERTIFICATE · NO. 089-2461</div>
+      </div>
+      <div class="cert-row"><b data-zh>登记品种</b><b data-en>Registered breed</b><i data-zh>英国短毛猫</i><i data-en>British Shorthair</i></div>
+      <div class="cert-row"><b data-zh>血系</b><b data-en>Lineage</b><i><span data-zh><span class="hl">冠军血线</span>（隔三代）</span><span data-en><span class="hl">"Champion line"</span> (3 gen. back)</span></i></div>
+      <div class="cert-row"><b data-zh>毛色</b><b data-en>Color</b><i data-zh>蓝灰 · 稀有色</i><i data-en>Blue-gray · "rare"</i></div>
+      <div class="cert-row"><b data-zh>近交系数 COI</b><b data-en>Inbreeding (COI)</b><i class="none" data-zh>未检测</i><i class="none" data-en>NOT TESTED</i></div>
+      <div class="cert-row"><b data-zh>父母健康筛查</b><b data-en>Parental screening</b><i class="none" data-zh>未提供</i><i class="none" data-en>NOT PROVIDED</i></div>
+      <div class="cert-row"><b data-zh>性格 / 社会化评估</b><b data-en>Temperament</b><i class="none" data-zh>无记录</i><i class="none" data-en>NO RECORDS</i></div>
+      <div class="cert-foot">
+        <span data-zh>本证书仅证明登记信息，不构成对健康、性格或家庭适配性的任何担保。</span>
+        <span data-en>This certificate attests to registration only. It is no guarantee of health, temperament, or fit with your family.</span>
+      </div>
+
+      <span class="ann ok" style="top:88px;right:-16px;transform:rotate(6deg)" data-zh>它从哪里来 ✓</span>
+      <span class="ann ok" style="top:88px;right:-16px;transform:rotate(6deg)" data-en>Where it came from ✓</span>
+      <span class="ann" style="top:46%;left:-24px;transform:rotate(-8deg)" data-zh>会不会生病？✗</span>
+      <span class="ann" style="top:46%;left:-24px;transform:rotate(-8deg)" data-en>Will it get sick? ✗</span>
+      <span class="ann" style="top:60%;right:-14px;transform:rotate(4deg)" data-zh>适不适合你？✗</span>
+      <span class="ann" style="top:60%;right:-14px;transform:rotate(4deg)" data-en>Right for you? ✗</span>
+      <span class="ann" style="bottom:52px;left:20px;transform:rotate(-4deg)" data-zh>这些它都不写</span>
+      <span class="ann" style="bottom:52px;left:20px;transform:rotate(-4deg)" data-en>None of that is written here</span>
+      <div class="stamp cert-stamp"><span data-zh>证据不足</span><span data-en>NO PROOF</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><span data-zh>SCROLL · 往下拆</span><span data-en>SCROLL · TEAR IT DOWN</span></div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <div class="tk"><s><span data-zh>冠军血统</span><span data-en>CHAMPION BLOODLINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>赛级血线</span><span data-en>SHOW-QUALITY LINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>双血统认证</span><span data-en>DUAL-PEDIGREE CERTIFIED</span></s><svg><use href="#paw"/></svg><s><span data-zh>稀有毛色</span><span data-en>RARE COLOR</span></s><svg><use href="#paw"/></svg><s><span data-zh>顶级血线</span><span data-en>TOP BLOODLINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>冠军后代</span><span data-en>CHAMPION-SIRED</span></s><svg><use href="#paw"/></svg><s><span data-zh>限时最后一只</span><span data-en>LAST ONE LEFT</span></s><svg><use href="#paw"/></svg><s><span data-zh>纯种更高级</span><span data-en>PUREBRED = SUPERIOR</span></s><svg><use href="#paw"/></svg></div>
+    <div class="tk"><s><span data-zh>冠军血统</span><span data-en>CHAMPION BLOODLINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>赛级血线</span><span data-en>SHOW-QUALITY LINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>双血统认证</span><span data-en>DUAL-PEDIGREE CERTIFIED</span></s><svg><use href="#paw"/></svg><s><span data-zh>稀有毛色</span><span data-en>RARE COLOR</span></s><svg><use href="#paw"/></svg><s><span data-zh>顶级血线</span><span data-en>TOP BLOODLINE</span></s><svg><use href="#paw"/></svg><s><span data-zh>冠军后代</span><span data-en>CHAMPION-SIRED</span></s><svg><use href="#paw"/></svg><s><span data-zh>限时最后一只</span><span data-en>LAST ONE LEFT</span></s><svg><use href="#paw"/></svg><s><span data-zh>纯种更高级</span><span data-en>PUREBRED = SUPERIOR</span></s><svg><use href="#paw"/></svg></div>
+  </div>
+</div>
+
+<section id="myths">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>01 / 迷思</span><span class="snum" data-en>01 / MYTHS</span>
+      <h2 data-zh>五句被故意混淆的话</h2>
+      <h2 data-en>Five deliberately blurred lines</h2>
+      <p class="slede">
+        <span data-zh>商业宣传把「血统」和「品质」捆在一起卖。下面每一句，都是经不起推敲的概念偷换——红线划掉的不是血统本身，而是这套逻辑。</span>
+        <span data-en>Commercial marketing welds "pedigree" to "quality". Every line below is a bait-and-switch that won't survive scrutiny — the red line strikes the logic, not the pedigree itself.</span>
+      </p>
+    </div>
+    <div class="myth rv"><div><span class="myth-claim"><span data-zh>有血统 ＝ 身体更好</span><span data-en>Pedigree = better health</span><span class="myth-x">✗</span></span></div><p class="myth-fact"><span data-zh>封闭基因库 + 近交系数攀升，反而可能<b>放大隐性遗传病风险</b>，带来繁殖力与幼仔存活率下降的「近交衰退」。</span><span data-en>Closed gene pools and rising inbreeding can <b>amplify recessive disease risk</b> — inbreeding depression hits fertility, pup survival, and overall fitness.</span></p></div>
+    <div class="myth rv" style="--d:.05s"><div><span class="myth-claim"><span data-zh>祖先得过奖 ＝ 后代一定优秀</span><span data-en>Award-winning ancestor = guaranteed great offspring</span><span class="myth-x">✗</span></span></div><p class="myth-fact"><span data-zh>遗传组合是随机的。祖先的奖杯<b>不会自动变成后代的好脾气</b>，更不会替你完成社会化和训练。</span><span data-en>Genetic recombination is random. A trophy on the wall <b>doesn't hand down a good temperament</b> — and it won't do the socializing or training for you.</span></p></div>
+    <div class="myth rv" style="--d:.1s"><div><span class="myth-claim"><span data-zh>外形符合标准 ＝ 品质更高</span><span data-en>Conforming to the standard = higher quality</span><span class="myth-x">✗</span></span></div><p class="myth-fact"><span data-zh>有些「标准」本身就是病：扁脸、折耳、短腿、暴眼——<b>越标准，越痛苦</b>。</span><span data-en>Some "standards" are diseases by design: flat faces, folded ears, short legs, bulging eyes — <b>the more "standard", the more suffering</b>.</span></p></div>
+    <div class="myth rv" style="--d:.15s"><div><span class="myth-claim"><span data-zh>品种稀有 ＝ 更有价值</span><span data-en>Rare breed = more valuable</span><span class="myth-x">✗</span></span></div><p class="myth-fact"><span data-zh>稀缺可以被人为制造。稀有色、罕见花纹，常常只是<b>定价策略</b>，不是品质认证。</span><span data-en>Scarcity can be manufactured. "Rare colors" and "unusual patterns" are usually <b>pricing strategy</b>, not proof of quality.</span></p></div>
+    <div class="myth rv" style="--d:.2s"><div><span class="myth-claim"><span data-zh>售价昂贵 ＝ 更值得珍惜</span><span data-en>High price = more worth cherishing</span><span class="myth-x">✗</span></span></div><p class="myth-fact"><span data-zh>高价只能证明卖方<b>成功建立了价格</b>，不能证明繁育过程科学。</span><span data-en>A high price only proves the seller <b>successfully set a price</b> — not that the breeding behind it was sound.</span></p></div>
+  </div>
+</section>
+
+<section id="cert" style="background:var(--paper2)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>02 / 证书</span><span class="snum" data-en>02 / THE CERT</span>
+      <h2 data-zh>一张证书，只回答三个问题</h2>
+      <h2 data-en>One certificate, three questions answered</h2>
+      <p class="slede">
+        <span data-zh>血统证书不是健康证明，不是性格报告，也不是适配性担保。它的能力边界，比销售话术里小得多。</span>
+        <span data-en>A pedigree is not a health report, a temperament assessment, or a compatibility guarantee. Its actual scope is far smaller than the sales pitch implies.</span>
+      </p>
+    </div>
+    <div class="cc">
+      <div class="cc-panel yes rv rv-l">
+        <span class="cc-tag"><span data-zh>它能证明</span><span data-en>WHAT IT PROVES</span></span>
+        <h3><span data-zh>登记在册的三件事</span><span data-en>Three things on the register</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#ck" style="stroke:var(--green);stroke-width:3.5;fill:none"/></svg><span><span data-zh>它被登记为什么品种</span><span data-en>What breed it's registered as</span></span></li>
+          <li><svg viewBox="0 0 24 24"><use href="#ck" style="stroke:var(--green);stroke-width:3.5;fill:none"/></svg><span><span data-zh>它的父母是谁</span><span data-en>Who its parents are</span></span></li>
+          <li><svg viewBox="0 0 24 24"><use href="#ck" style="stroke:var(--green);stroke-width:3.5;fill:none"/></svg><span><span data-zh>它的祖先是否进入某个登记体系</span><span data-en>Whether its ancestors entered a registry</span></span></li>
+        </ul>
+      </div>
+      <div class="cc-panel no rv rv-r" style="--d:.1s">
+        <span class="cc-tag"><span data-zh>它不能证明</span><span data-en>WHAT IT DOESN'T</span></span>
+        <h3><span data-zh>你真正关心的四件事</span><span data-en>The four things you actually care about</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#xx" style="color:var(--red)"/></svg><span><span data-zh>它有没有遗传病</span><span data-en>Whether it carries genetic disease</span></span></li>
+          <li><svg viewBox="0 0 24 24"><use href="#xx" style="color:var(--red)"/></svg><span><span data-zh>繁育过程是否科学</span><span data-en>Whether the breeding was done soundly</span></span></li>
+          <li><svg viewBox="0 0 24 24"><use href="#xx" style="color:var(--red)"/></svg><span><span data-zh>幼年期是否得到良好照顾</span><span data-en>Whether it was raised well as a youngster</span></span></li>
+          <li><svg viewBox="0 0 24 24"><use href="#xx" style="color:var(--red)"/></svg><span><span data-zh>成年后是否适合你的家庭</span><span data-en>Whether it will fit your family as an adult</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="cc-note rv">
+      <span data-zh>把生命简化成一张家谱，本身就是对复杂现实的误判。只展示血统证书、却回避父母健康筛查的卖家，是一个非常明显的<b style="color:var(--red-d)">警讯</b>。</span>
+      <span data-en>Reducing a life to a family tree is a misreading of a complex reality. A seller who flashes the pedigree but dodges parental health screening is waving a very obvious <b style="color:var(--red-d)">warning flag</b>.</span>
+    </p>
+  </div>
+</section>
+
+<section id="data" class="dark">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>03 / 数据</span><span class="snum" data-en>03 / THE DATA</span>
+      <h2 style="color:var(--paper)" data-zh>把数字摆上桌</h2>
+      <h2 style="color:var(--paper)" data-en>Put the numbers on the table</h2>
+      <p class="slede">
+        <span data-zh>「纯种必然更健康」和「混种天然没病」是两句同样草率的口号。证据站在中间：风险取决于具体疾病、具体品种、具体家系和具体繁育方式。</span>
+        <span data-en>"Purebreds are always healthier" and "mixed breeds never get sick" are equally sloppy slogans. The evidence sits in the middle: risk depends on the specific disease, breed, family line, and breeding practice.</span>
+      </p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><div class="stat-num"><span data-count="25">0</span><small>%</small></div><p><span data-zh>亲兄妹交配后代的理论近交系数（COI）。近交程度持续上升，会让隐性有害变异成对出现的机会变大。</span><span data-en>Theoretical inbreeding coefficient (COI) of a full-sibling mating. As inbreeding climbs, harmful recessive variants are increasingly likely to pair up.</span></p><span class="src"><span data-zh>群体遗传学常识</span><span data-en>POPULATION GENETICS 101</span></span></div>
+      <div class="stat rv" style="--d:.08s"><div class="stat-num"><span data-count="9">0</span><small>%</small></div><p><span data-zh>犬类个体行为差异中，「品种」平均只能解释的比例。<button class="term" data-def-zh="遗传力是群体统计量：描述某群体中个体差异有多大比例与遗传差异相关。它不等于「某个体的行为有多少由基因决定」，更不意味着性状不可改变。" data-def-en="Heritability is a population statistic: the share of individual differences in a given group that tracks genetic differences. It does not mean 'how much of one animal's behavior is genetic', nor that a trait is fixed.">遗传力</button>研究告诉我们：看到品种就预测个体性格，超出了证据能支持的范围。</span><span data-en>The share of individual behavioral differences in dogs that "breed" explains on average. <button class="term" data-def-zh="遗传力是群体统计量：描述某群体中个体差异有多大比例与遗传差异相关。它不等于「某个体的行为有多少由基因决定」，更不意味着性状不可改变。" data-def-en="Heritability is a population statistic: the share of individual differences in a given group that tracks genetic differences. It does not mean 'how much of one animal's behavior is genetic', nor that a trait is fixed.">Heritability</button> research says: predicting an individual's personality from its breed outruns the evidence.</span></p><span class="src">SCIENCE · 2022 · <span data-zh>2000+ 犬基因数据</span><span data-en>2,000+ DOGS GENOTYPED</span> [4]</span></div>
+      <div class="stat rv" style="--d:.12s"><div class="stat-num"><span data-count="27254">0</span></div><p><span data-zh>UC Davis 兽医教学医院研究中，携带至少一种遗传性疾病的犬只样本量，覆盖 24 种疾病的纯种 / 混种比较。</span><span data-en>Dogs with at least one inherited disorder in the UC Davis veterinary teaching-hospital study, covering 24 conditions compared across purebreds and mixed breeds.</span></p><span class="src">JAVMA · 2013 [2]</span></div>
+      <div class="stat rv" style="--d:.16s">
+        <div class="mini-row">
+          <div class="mini"><div class="stat-num"><span data-count="10">0</span></div><p data-zh>纯种更高发</p><p data-en>more common in purebreds</p></div>
+          <div class="mini"><div class="stat-num"><em><span data-count="13">0</span></em></div><p data-zh>无显著差异</p><p data-en>no significant difference</p></div>
+          <div class="mini"><div class="stat-num"><span data-count="1">0</span></div><p data-zh>混种更高发<sup>*</sup></p><p data-en>more common in mixed<sup>*</sup></p></div>
+        </div>
+        <p style="margin-top:12px;font-size:.85rem !important;color:rgba(245,241,230,.72)"><span data-zh><sup>*</sup>前十字韧带断裂。24 种疾病里，13 种在纯种与混种之间没有显著差异。</span><span data-en><sup>*</sup>Cranial cruciate ligament rupture. Of 24 conditions, 13 showed no significant difference between purebreds and mixed breeds.</span></p>
+        <span class="src"><span data-zh>24 种疾病比较</span><span data-en>24 CONDITIONS COMPARED</span> [2]</span>
+      </div>
+    </div>
+
+    <div class="sire rv" id="sireWrap">
+      <div>
+        <h3><span data-zh>「<button class="term" data-def-zh="热门种公效应：少数获奖或流行的种公被反复大量使用，账面上种群很大，真正向下一代贡献基因的却只有个别个体，导致整个品种遗传多样性快速收窄。" data-def-en="Popular sire effect: when a few prize-winning or fashionable sires are used massively and repeatedly, the registry may look huge while only a handful of individuals actually contribute genes — shrinking the breed's genetic diversity fast.">热门种公效应</button>」：<br>账面上很多，<span style="color:var(--yellow)">基因里很少</span></span><span data-en>The "<button class="term" data-def-zh="热门种公效应：少数获奖或流行的种公被反复大量使用，账面上种群很大，真正向下一代贡献基因的却只有个别个体，导致整个品种遗传多样性快速收窄。" data-def-en="Popular sire effect: when a few prize-winning or fashionable sires are used massively and repeatedly, the registry may look huge while only a handful of individuals actually contribute genes — shrinking the breed's genetic diversity fast.">popular sire effect</button>":<br>many on paper, <span style="color:var(--yellow)">few in the gene pool</span></span></h3>
+        <p><span data-zh>品种登记册一旦封闭，新的遗传变异就很难进入。若繁育者反复使用少数种公种母，登记数量再庞大，真正向下一代贡献大量基因的也只有顶端那几个个体——对英国犬业俱乐部十个品种家谱的研究发现，多数受研究品种的<button class="term" data-def-zh="有效群体大小：在理想群体模型下，与实际群体有相同遗传漂变速率的个体数。它远小于登记数量，是衡量遗传多样性是否充足的硬指标。" data-def-en="Effective population size: the size of an idealized population that would drift genetically at the same rate as the real one. Far smaller than registration counts — the hard measure of whether genetic diversity is adequate.">有效群体大小</button>很低。[1]</span><span data-en>Once a breed's registry closes, new genetic variation can barely enter. When a handful of sires and dams are used over and over, it doesn't matter how big the registered population looks — only the individuals at the top actually contribute genes. A pedigree study of ten UK Kennel Club breeds found most had very low <button class="term" data-def-zh="有效群体大小：在理想群体模型下，与实际群体有相同遗传漂变速率的个体数。它远小于登记数量，是衡量遗传多样性是否充足的硬指标。" data-def-en="Effective population size: the size of an idealized population that would drift genetically at the same rate as the real one. Far smaller than registration counts — the hard measure of whether genetic diversity is adequate.">effective population sizes</button>. [1]</span></p>
+        <p style="margin-top:12px"><span data-zh>纸面家谱上看似关系不近的两只动物，基因组层面的相似度仍可能很高。所以，<b style="color:var(--yellow)">登记数量庞大 ≠ 遗传多样性充足</b>。</span><span data-en>Two dogs that look distantly related on paper can still be highly similar at the genomic level. So: <b style="color:var(--yellow)">a large registered population ≠ sufficient genetic diversity</b>.</span></p>
+      </div>
+      <svg id="sire" viewBox="0 0 640 380" role="img" aria-label="Popular sire effect diagram">
+        <g id="sireLines"></g>
+        <g id="sireDots"></g>
+        <circle class="bigc" cx="160" cy="78" r="30"/><text x="160" y="83" data-zh>热门种公 A</text><text x="160" y="83" data-en>SIRE A</text>
+        <circle class="bigc" cx="320" cy="78" r="30"/><text x="320" y="83" data-zh>热门种公 B</text><text x="320" y="83" data-en>SIRE B</text>
+        <circle class="bigc" cx="480" cy="78" r="30"/><text x="480" y="83" data-zh>热门种公 C</text><text x="480" y="83" data-en>SIRE C</text>
+        <text class="cap" x="320" y="364" data-zh>登记在册的庞大种群 —— 每一根线，都是一次基因贡献</text>
+        <text class="cap" x="320" y="364" data-en>The vast registered population — every line is a genetic contribution</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="lab" class="lab-bg">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>04 / 实验室</span><span class="snum" data-en>04 / THE LAB</span>
+      <h2 data-zh>近交系数体验台</h2>
+      <h2 data-en>The inbreeding coefficient bench</h2>
+      <p class="slede">
+        <span data-zh><button class="term" data-def-zh="近交系数（COI）：一个个体在某位点上的两个等位基因因共同祖先而「同祖同源」的概率。它是群体层面的风险指标，不是某只个体生病的概率。" data-def-en="Coefficient of inbreeding (COI): the probability that an individual's two alleles at a locus are identical by descent from a common ancestor. A population-level risk indicator — not the chance that a given individual will be sick.">近交系数（COI）</button>衡量的是概率，不是判决书。点选一种配种关系，看看后代理论上的遗传起点在哪里。</span>
+        <span data-en>The <button class="term" data-def-zh="近交系数（COI）：一个个体在某位点上的两个等位基因因共同祖先而「同祖同源」的概率。它是群体层面的风险指标，不是某只个体生病的概率。" data-def-en="Coefficient of inbreeding (COI): the probability that an individual's two alleles at a locus are identical by descent from a common ancestor. A population-level risk indicator — not the chance that a given individual will be sick.">coefficient of inbreeding (COI)</button> measures probabilities, not verdicts. Pick a mating type and see where the offspring theoretically starts.</span>
+      </p>
+    </div>
+    <div class="lab-grid">
+      <div class="lab-opts rv rv-l">
+        <button class="lab-opt" data-i="0"><span data-zh>无共同祖先 · 远缘配对<small>登记体系外的健康引入</small></span><span data-en>No common ancestors · outcrossing<small>Healthy introductions from outside the registry</small></span><span class="chip">≈0–1%</span></button>
+        <button class="lab-opt" data-i="1"><span data-zh>表 / 堂亲交配<small>共享祖父母一代</small></span><span data-en>First-cousin mating<small>Sharing a grandparent generation</small></span><span class="chip">6.25%</span></button>
+        <button class="lab-opt" data-i="2"><span data-zh>半同胞交配<small>同父异母或同母异父</small></span><span data-en>Half-sibling mating<small>Same sire or same dam</small></span><span class="chip">12.5%</span></button>
+        <button class="lab-opt" data-i="3"><span data-zh>全同胞交配<small>亲兄妹 / 亲姐弟</small></span><span data-en>Full-sibling mating<small>Brother × sister</small></span><span class="chip">25%</span></button>
+        <button class="lab-opt" data-i="4"><span data-zh>亲子交配<small>以「提纯」为名的常见操作</small></span><span data-en>Parent × offspring<small>A common move done in the name of "line-breeding"</small></span><span class="chip">25%</span></button>
+      </div>
+      <div class="gauge-card rv rv-r" style="--d:.1s">
+        <svg viewBox="0 0 320 205" role="img" aria-label="COI gauge">
+          <path d="M32 172 A128 128 0 0 1 49.15 108" fill="none" stroke="var(--green)" stroke-width="26"/>
+          <path d="M49.15 108 A128 128 0 0 1 96 61.15" fill="none" stroke="var(--yellow)" stroke-width="26"/>
+          <path d="M96 61.15 A128 128 0 0 1 224 61.15" fill="none" stroke="var(--orange)" stroke-width="26"/>
+          <path d="M224 61.15 A128 128 0 0 1 288 172" fill="none" stroke="var(--red)" stroke-width="26"/>
+          <text x="30" y="198" style="font-family:var(--num);font-size:13px;fill:rgba(28,40,32,.5)">0%</text>
+          <text x="160" y="24" text-anchor="middle" style="font-family:var(--num);font-size:13px;fill:rgba(28,40,32,.5)">15%</text>
+          <text x="290" y="198" text-anchor="end" style="font-family:var(--num);font-size:13px;fill:rgba(28,40,32,.5)">30%</text>
+          <g id="gaugeNeedle">
+            <line x1="160" y1="172" x2="160" y2="68" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+          </g>
+          <circle cx="160" cy="172" r="10" fill="var(--ink)"/>
+        </svg>
+        <div class="lab-read"><b id="coiVal">— —</b><span data-zh>理论 COI</span><span data-en>THEORETICAL COI</span></div>
+        <div class="lab-verdict" id="coiMsg" aria-live="polite"></div>
+      </div>
+    </div>
+    <p class="lab-note rv">
+      <span data-zh>注意：COI 是群体统计量，不能断定某只个体一定生病；家谱 COI 受记录代数与准确性限制，基因组 COI 依据 DNA 纯合片段估计，两者可能不一致。此外，<button class="term" data-def-zh="近交衰退：近交程度持续上升导致隐性有害变异成对出现机会增加，表现为繁殖力、幼仔存活率和整体适应性下降。" data-def-en="Inbreeding depression: as inbreeding climbs, harmful recessive variants increasingly pair up, showing up as reduced fertility, lower offspring survival, and poorer overall fitness.">近交衰退</button>和<button class="term" data-def-zh="多基因性状：由许多基因与体重、营养、运动、年龄等环境因素共同作用的性状（如髋关节发育不良），无法靠单项 DNA 检测完全排除。" data-def-en="Polygenic traits: shaped by many genes plus weight, nutrition, exercise, and age (e.g., hip dysplasia). A single DNA test can never rule them out.">多基因病</button>的存在意味着：低 COI 是必要条件，不是健康通行证。</span>
+      <span data-en>Note: COI is a population statistic; it can't decree that a given individual will fall ill. Pedigree COI is limited by the depth and accuracy of records; genomic COI, estimated from runs of homozygosity in DNA, may tell a different story. And because <button class="term" data-def-zh="近交衰退：近交程度持续上升导致隐性有害变异成对出现机会增加，表现为繁殖力、幼仔存活率和整体适应性下降。" data-def-en="Inbreeding depression: as inbreeding climbs, harmful recessive variants increasingly pair up, showing up as reduced fertility, lower offspring survival, and poorer overall fitness.">inbreeding depression</button> and <button class="term" data-def-zh="多基因性状：由许多基因与体重、营养、运动、年龄等环境因素共同作用的性状（如髋关节发育不良），无法靠单项 DNA 检测完全排除。" data-def-en="Polygenic traits: shaped by many genes plus weight, nutrition, exercise, and age (e.g., hip dysplasia). A single DNA test can never rule them out.">polygenic disease</button> exist, a low COI is a necessary condition — not a health passport.</span>
+    </p>
+  </div>
+</section>
+
+<section id="translate" style="background:var(--paper2)">
+  <div class="wrap">
+    <div class="tr-grid">
+      <div class="tr-left rv">
+        <span class="snum" data-zh>05 / 话术</span><span class="snum" data-en>05 / THE SPIN</span>
+        <h2 style="font-size:clamp(2rem,5vw,3.1rem);margin-top:16px" data-zh>话术<br>翻译机</h2>
+        <h2 style="font-size:clamp(2rem,5vw,3.1rem);margin-top:16px" data-en>The spin<br>translator</h2>
+        <p class="slede" style="margin-top:14px">
+          <span data-zh>销售页上的高频词，逐条翻译成人话。点击任意一条，看它原本的意思。</span>
+          <span data-en>The buzzwords of every listing page, translated into plain language. Click any line to see what it actually means.</span>
+        </p>
+        <span class="hand" data-zh>付款之前，先翻译一遍 →</span>
+        <span class="hand" data-en>Translate before you pay →</span>
+      </div>
+      <div>
+        <div class="tr-row rv">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">01</span><span class="tr-phrase"><span data-zh>「冠军血统」</span><span data-en>"Champion bloodline"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>家谱里隔了好几代的某位亲戚，曾经在某个规则下赢过一场比赛。<span class="truth">你付的是冠军溢价，得到的是一个遥远的亲缘故事——比赛成绩和「适合你家」之间，隔着遗传随机性、个体差异和成长环境。</span></span><span data-en>A relative several generations back once won a show under a particular set of rules.<span class="truth">You paid a champion premium for a distant family anecdote — between a show record and "right for your home" lie genetic randomness, individual differences, and upbringing.</span></span></div></div>
+        </div>
+        <div class="tr-row rv" style="--d:.05s">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">02</span><span class="tr-phrase"><span data-zh>「做过基因检测」</span><span data-en>"DNA tested"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>「未检出已检测的变异」只对被检测的那几个位点负责。<span class="truth">要继续追问：测的是哪些变异？机构与样本身份能否核验？髋肘影像、眼科、心脏超声这些 DNA 测不出的筛查做了吗？</span></span><span data-en>"Cleared of the variants tested" only covers the exact loci tested.<span class="truth">Keep asking: which variants? Can the lab and sample identity be verified? Were the screenings DNA can't do — hip/elbow imaging, eye exams, cardiac ultrasound — actually performed?</span></span></div></div>
+        </div>
+        <div class="tr-row rv" style="--d:.1s">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">03</span><span class="tr-phrase"><span data-zh>「父母都很健康」</span><span data-en>"Both parents are perfectly healthy"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>「我们家从没出过问题」也一样——这是承诺，不是证据。<span class="truth">证据是可核验的筛查报告：按品种风险组合的检测、影像评估、正规体检记录，以及繁育双方完整的健康资料。</span></span><span data-en>"We've never had a problem" too — that's a promise, not evidence.<span class="truth">Evidence is verifiable screening records: breed-appropriate panels, imaging, proper vet exams, and complete health documentation on both parents.</span></span></div></div>
+        </div>
+        <div class="tr-row rv" style="--d:.15s">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">04</span><span class="tr-phrase"><span data-zh>「稀有毛色 · 顶级血线」</span><span data-en>"Rare color · top bloodline"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>稀缺感是可以被制造的营销原料。<span class="truth">售价高只能证明卖方成功建立了价格。稀有 ≠ 更好，贵 ≠ 更负责。</span></span><span data-en>Scarcity is a marketing ingredient that can be manufactured.<span class="truth">A high price only proves the seller successfully set a price. Rare ≠ better. Expensive ≠ responsible.</span></span></div></div>
+        </div>
+        <div class="tr-row rv" style="--d:.2s">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">05</span><span class="tr-phrase"><span data-zh>「混种一定更健康」</span><span data-en>"Mixed breeds are always healthier"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>这句话同样是口号。杂交可能降低部分隐性风险、产生<button class="term" data-def-zh="杂种优势：遗传背景差异较大的亲本交配，后代在部分性状上表现优于双亲平均的现象。但它不能抵消共享风险变异或多基因疾病的影响。" data-def-en="Hybrid vigor (heterosis): when genetically distant parents are crossed, offspring outperform the parental average in some traits. It can't cancel out shared risk variants or polygenic disease.">杂种优势</button>，但若亲本共享同一风险变异、或疾病本身是多基因性的，混种后代照样可能患病。<span class="truth">风险取决于具体疾病、具体家系、具体繁育方式——健康必须用证据判断，不能从「纯不纯」直接推导。</span></span><span data-en>Also a slogan. Outcrossing can dilute some recessive risks and produce <button class="term" data-def-zh="杂种优势：遗传背景差异较大的亲本交配，后代在部分性状上表现优于双亲平均的现象。但它不能抵消共享风险变异或多基因疾病的影响。" data-def-en="Hybrid vigor (heterosis): when genetically distant parents are crossed, offspring outperform the parental average in some traits. It can't cancel out shared risk variants or polygenic disease.">hybrid vigor</button>, but if both parents share the same risk variant, or the disease is polygenic, mixed-breed offspring can still be affected.<span class="truth">Risk depends on the specific disease, the specific line, the specific breeding practice — health must be judged by evidence, never derived from "pure or not".</span></span></div></div>
+        </div>
+        <div class="tr-row rv" style="--d:.25s">
+          <button class="tr-head" aria-expanded="false"><span class="tr-idx">06</span><span class="tr-phrase"><span data-zh>「最后一只 · 限时优惠」</span><span data-en>"Last one · limited-time offer"</span></span><span class="tr-tag"><span data-zh>译</span><span data-en>T</span></span><span class="tr-plus">+</span></button>
+          <div class="tr-body"><div class="tr-inner"><span data-zh>催你付款的紧迫感，是成交技巧，不是动物的需求。<span class="truth">一个真正负责任的繁育者会筛选买家、关心动物去向——而不是谁付款就卖给谁。</span></span><span data-en>The urgency pushing you to pay is a closing technique, not the animal's need.<span class="truth">A truly responsible breeder screens buyers and cares where the animal goes — not whoever pays first.</span></span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flags">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>06 / 红旗</span><span class="snum" data-en>06 / RED FLAGS</span>
+      <h2 style="color:var(--paper)" data-zh>卖家红旗扫描仪</h2>
+      <h2 style="color:var(--paper)" data-en>The seller red-flag scanner</h2>
+      <p class="slede">
+        <span data-zh>把下面九条当成 X 光片，对着你正在聊的那个卖家照一遍。点选即判定，无需提交。</span>
+        <span data-en>Hold these nine items up to the seller you're talking to, like an X-ray. Tap to score — nothing is submitted.</span>
+      </p>
+    </div>
+    <div class="flag-grid">
+      <div class="flag-left rv rv-l">
+        <div class="flag-count" id="flagCount" aria-live="polite">0</div>
+        <p data-zh>面红旗已触发</p><p data-en>RED FLAGS RAISED</p>
+        <div class="flag-verdict" id="flagVerdict" data-lv="ok" aria-live="polite"></div>
+        <span class="flag-hint" data-zh>宁可错查，不可漏查 ↑</span>
+        <span class="flag-hint" data-en>Better to over-check than miss one ↑</span>
+      </div>
+      <div class="rv rv-r" style="--d:.1s">
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>只谈血统和奖项，回避品种常见疾病</span><span data-en>Talks only of pedigree and prizes; dodges the breed's common diseases</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>拿不出可核验的父母健康筛查报告</span><span data-en>Can't produce verifiable parental health screening reports</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>拒绝让你看母体和真实饲养环境</span><span data-en>Refuses to let you see the dam or the actual living conditions</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>用「限时」「稀有」「最后一只」催你付款</span><span data-en>Pressures you with "limited time", "rare", "last one left"</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>说「做过基因检测」，但说不出测了哪些变异</span><span data-en>Claims "DNA tested" but can't say which variants were tested</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>幼宠未满适宜年龄就可以带走</span><span data-en>Lets you take the youngster before the proper age</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>不签合同，也不说明遗传病责任</span><span data-en>No contract, no stated responsibility for genetic disease</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>谁付款就卖给谁，从不问你的饲养条件</span><span data-en>Sells to whoever pays; never asks about your living situation</span></label>
+        <label class="flag-row"><input type="checkbox"><span class="flag-ic"><svg><use href="#flagic"/></svg></span><span data-zh>问「养不了怎么办」时答不上来，或说「不退不换」</span><span data-en>Can't answer "what if I can't keep it?" — or says "no returns, ever"</span></label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tape" aria-hidden="true"></div>
+<section id="cost" class="cost">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>07 / 代价</span><span class="snum" data-en>07 / THE COST</span>
+      <h2 style="color:var(--paper)" data-zh>当「萌」是疾病的包装</h2>
+      <h2 style="color:var(--paper)" data-en>When "cute" is the packaging for disease</h2>
+      <p class="slede">
+        <span data-zh>有些外形在照片里很可爱，在现实里是终身医疗。把疾病相关特征浪漫化，是最需要警惕的事。</span>
+        <span data-en>Some looks are adorable in photos and a lifetime of treatment in reality. Romancing disease-linked traits is what deserves the most alarm.</span>
+      </p>
+    </div>
+
+    <div class="cost-row rv"><span class="cost-say"><span data-zh>睡觉打呼好可爱</span><span data-en>The snoring is so cute</span></span><svg class="arrow" viewBox="0 0 34 34"><path d="M4 17h24M20 8l9 9-9 9"/></svg><span class="cost-real"><span data-zh><button class="term" data-def-zh="BOAS（短头犬阻塞性气道综合征）：狭窄鼻孔、过长软腭、拥挤鼻腔等结构异常导致上气道阻力增加，表现为呼吸费力、运动不耐受、发绀、晕厥与散热困难。" data-def-en="BOAS (Brachycephalic Obstructive Airway Syndrome): narrowed nostrils, overlong soft palate, and crowded nasal passages raise airway resistance — labored breathing, exercise intolerance, cyanosis, fainting, and poor heat tolerance.">BOAS</button>：狭窄鼻孔、过长软腭，呼吸是在用力挣命</span><span data-en><button class="term" data-def-zh="BOAS（短头犬阻塞性气道综合征）：狭窄鼻孔、过长软腭、拥挤鼻腔等结构异常导致上气道阻力增加，表现为呼吸费力、运动不耐受、发绀、晕厥与散热困难。" data-def-en="BOAS (Brachycephalic Obstructive Airway Syndrome): narrowed nostrils, overlong soft palate, and crowded nasal passages raise airway resistance — labored breathing, exercise intolerance, cyanosis, fainting, and poor heat tolerance.">BOAS</button>: narrowed nostrils and an overlong soft palate — every breath is labor</span></span></div>
+    <div class="cost-row rv" style="--d:.05s"><span class="cost-say"><span data-zh>安静省心</span><span data-en>So calm and low-maintenance</span></span><svg class="arrow" viewBox="0 0 34 34"><path d="M4 17h24M20 8l9 9-9 9"/></svg><span class="cost-real"><span data-zh>运动不耐受、发绀、晕厥、高温下散热困难</span><span data-en>Exercise intolerance, cyanosis, fainting, inability to cool down in heat</span></span></div>
+    <div class="cost-row rv" style="--d:.1s"><span class="cost-say"><span data-zh>走路一扭一扭很萌</span><span data-en>That waddle is adorable</span></span><svg class="arrow" viewBox="0 0 34 34"><path d="M4 17h24M20 8l9 9-9 9"/></svg><span class="cost-real"><span data-zh>软骨发育异常、进行性退行性关节病</span><span data-en>Cartilage dysplasia, progressive degenerative joint disease</span></span></div>
+    <div class="cost-row rv" style="--d:.15s"><span class="cost-say"><span data-zh>娇贵</span><span data-en>"Delicate"</span></span><svg class="arrow" viewBox="0 0 34 34"><path d="M4 17h24M20 8l9 9-9 9"/></svg><span class="cost-real"><span data-zh>终身依赖医疗干预</span><span data-en>A lifetime dependent on medical intervention</span></span></div>
+    <div class="cost-row rv" style="--d:.2s"><span class="cost-say"><span data-zh>这是品种的 normal 代价</span><span data-en>That's just the breed's "normal cost"</span></span><svg class="arrow" viewBox="0 0 34 34"><path d="M4 17h24M20 8l9 9-9 9"/></svg><span class="cost-real"><span data-zh>无法自然分娩、眼球突出易角膜损伤——被说成「正常」的痛苦</span><span data-en>Inability to birth naturally, protruding eyes prone to corneal injury — suffering rebranded as "normal"</span></span></div>
+
+    <div class="cases">
+      <div class="case rv rv-l">
+        <span class="case-chip"><span data-zh>典型案例 NO.1</span><span data-en>CASE FILE NO.1</span></span>
+        <h4><span data-zh>短吻犬 · 被选育出来的呼吸困难</span><span data-en>Brachycephalic dogs — breathing difficulty, bred on purpose</span></h4>
+        <p><span data-zh>短头犬阻塞性气道综合征（BOAS）是「外形—功能—福利」联系的典型：狭窄鼻孔、过长增厚的软腭、拥挤的鼻腔结构增加上气道阻力，长期用力吸气又引起继发性改变，形成恶性循环。流行病学与全身体积描记研究已验证面部构型与气道阻塞风险的关联。</span><span data-en>Brachycephalic Obstructive Airway Syndrome (BOAS) is the textbook case of "form–function–welfare": narrowed nostrils, an overlong thickened soft palate, and crowded nasal passages raise airway resistance; the chronic effort of breathing then triggers secondary changes — a vicious cycle. Epidemiology and whole-body plethysmography have confirmed the link between facial conformation and airway obstruction.</span></p>
+        <span class="src">O'NEILL 2015 · LIU 2016 [6][7]</span>
+      </div>
+      <div class="case rv rv-r" style="--d:.1s">
+        <span class="case-chip"><span data-zh>典型案例 NO.2</span><span data-en>CASE FILE NO.2</span></span>
+        <h4><span data-zh>苏格兰折耳猫 · 折耳就是症状本身</span><span data-en>Scottish Folds — the fold IS the symptom</span></h4>
+        <p><span data-zh>折耳表型与 <i>TRPV4</i> 基因的显性变异相关：一份变异拷贝就足以影响软骨发育，可能出现四肢、尾部畸形及进行性关节病。折耳不是装饰性耳形，而是同一软骨发育变异的可见标志。</span><span data-en>The folded ear is tied to a dominant variant in the <i>TRPV4</i> gene: a single copy is enough to disrupt cartilage development, potentially causing limb and tail deformities and progressive joint disease. The fold is not a decorative ear shape — it's the visible sign of that same cartilage variant.</span></p>
+        <span class="src">GANDOLFI 2016 · RORDEN 2021 [8][9]</span>
+      </div>
+    </div>
+
+    <p class="cost-quote rv">
+      <span data-zh>喜欢，不能自动使伤害合理化。<br><mark>付得起医疗费，也不等于有权主动制造可预见的痛苦。</mark></span>
+      <span data-en>Affection does not automatically justify harm.<br><mark>Being able to afford the vet bills doesn't mean you have the right to manufacture foreseeable suffering.</mark></span>
+    </p>
+    <p class="cost-sub rv">
+      <span data-zh>如果一种外形越「标准」，动物越难正常呼吸、行走、散热或繁殖——需要被重新审视的就不只是繁育技术，也包括我们的消费审美。</span>
+      <span data-en>When a more "standard" look means the animal breathes, walks, cools itself, or reproduces with more difficulty — what needs re-examining is not just breeding technique, but our consumer aesthetics.</span>
+    </p>
+  </div>
+</section>
+<div class="tape" aria-hidden="true"></div>
+
+<section id="risks">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>08 / 风险速查</span><span class="snum" data-en>08 / RISK INDEX</span>
+      <h2 data-zh>这些名字背后的隐藏账单</h2>
+      <h2 data-en>The hidden bill behind these names</h2>
+      <p class="slede">
+        <span data-zh>喜欢某个品种不是罪，但要知道它为这个外形付着什么账。按物种筛选，看看高发风险和你该追问什么。</span>
+        <span data-en>Liking a breed is no sin — but know what it pays for that look. Filter by species; see the prevalent risks and the questions to ask.</span>
+      </p>
+    </div>
+    <div class="risk-filters rv">
+      <button class="rf on" data-filter="all"><span data-zh>全部 · 8</span><span data-en>All · 8</span></button>
+      <button class="rf" data-filter="dog"><span data-zh>犬 · 5</span><span data-en>Dogs · 5</span></button>
+      <button class="rf" data-filter="cat"><span data-zh>猫 · 3</span><span data-en>Cats · 3</span></button>
+    </div>
+    <div class="risk-grid">
+      <div class="risk-card rv" data-sp="dog"><span class="sp-chip sp-dog"><span data-zh>犬</span><span data-en>DOG</span></span><h4><span data-zh>法国斗牛犬 · 巴哥 · 英斗</span><span data-en>French Bulldog · Pug · English Bulldog</span></h4><span class="risk-tag"><span data-zh>短头犬阻塞性气道综合征（BOAS）</span><span data-en>Brachycephalic Obstructive Airway Syndrome (BOAS)</span></span><p><span data-zh>狭窄鼻孔、过长软腭让呼吸终身费力，还常伴脊柱与眼部问题。</span><span data-en>Narrowed nostrils and an overlong soft palate make breathing lifelong labor; spinal and eye problems often tag along.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母安静状态下的呼吸视频？做过 BOAS 分级评估吗？[6][7]</span><span data-en><b>Ask:</b> calm-state breathing video of the parents? Any BOAS grading? [6][7]</span></p></div>
+      <div class="risk-card rv" data-sp="cat" style="--d:.05s"><span class="sp-chip sp-cat"><span data-zh>猫</span><span data-en>CAT</span></span><h4><span data-zh>苏格兰折耳猫</span><span data-en>Scottish Fold</span></h4><span class="risk-tag"><span data-zh>TRPV4 显性变异 · 骨软骨发育不良</span><span data-en>TRPV4 dominant variant · osteochondrodysplasia</span></span><p><span data-zh>折耳本身就是软骨发育变异的可见标志，可能伴四肢、尾部畸形与进行性关节病。</span><span data-en>The folded ear itself is the visible sign of a cartilage variant; limb and tail deformities and progressive joint disease can follow.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>双亲耳形？做过四肢与尾部影像检查吗？[8][9]</span><span data-en><b>Ask:</b> both parents' ear shape? Imaging of limbs and tail? [8][9]</span></p></div>
+      <div class="risk-card rv" data-sp="dog" style="--d:.1s"><span class="sp-chip sp-dog"><span data-zh>犬</span><span data-en>DOG</span></span><h4><span data-zh>金毛 · 拉布拉多 · 德牧</span><span data-en>Golden · Labrador · German Shepherd</span></h4><span class="risk-tag"><span data-zh>髋 / 肘关节发育不良</span><span data-en>Hip / elbow dysplasia</span></span><p><span data-zh>多基因性状，DNA 测不出来，必须依靠影像学评估。</span><span data-en>Polygenic; DNA can't rule it out — only imaging can.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母有无 OFA / PennHIP 髋肘评分？[3]</span><span data-en><b>Ask:</b> OFA / PennHIP hip and elbow scores for the parents? [3]</span></p></div>
+      <div class="risk-card rv" data-sp="dog" style="--d:.15s"><span class="sp-chip sp-dog"><span data-zh>犬</span><span data-en>DOG</span></span><h4><span data-zh>骑士查理王小猎犬</span><span data-en>Cavalier King Charles Spaniel</span></h4><span class="risk-tag"><span data-zh>二尖瓣疾病（MVD）</span><span data-en>Mitral valve disease (MVD)</span></span><p><span data-zh>该品种心脏病高发，严重个体中年即可能出现心衰。</span><span data-en>The breed is highly prone to heart disease; severe individuals can reach heart failure in middle age.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母心脏超声报告？听诊记录？</span><span data-en><b>Ask:</b> parents' echocardiogram reports? Auscultation records?</span></p></div>
+      <div class="risk-card rv" data-sp="cat" style="--d:.2s"><span class="sp-chip sp-cat"><span data-zh>猫</span><span data-en>CAT</span></span><h4><span data-zh>波斯猫 · 异国短毛猫</span><span data-en>Persian · Exotic Shorthair</span></h4><span class="risk-tag"><span data-zh>多囊肾（PKD）+ 短吻问题</span><span data-en>Polycystic kidney disease (PKD) + brachycephalic issues</span></span><p><span data-zh>单基因病，可 DNA 检测；扁脸又叠加呼吸风险。</span><span data-en>A single-gene disease, DNA-testable; the flat face stacks breathing risk on top.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母 PKD 检测报告？静息呼吸是否顺畅？</span><span data-en><b>Ask:</b> parents' PKD test results? Resting breathing smooth?</span></p></div>
+      <div class="risk-card rv" data-sp="dog" style="--d:.25s"><span class="sp-chip sp-dog"><span data-zh>犬</span><span data-en>DOG</span></span><h4><span data-zh>腊肠犬 · 柯基</span><span data-en>Dachshund · Corgi</span></h4><span class="risk-tag"><span data-zh>椎间盘疾病</span><span data-en>Intervertebral disc disease</span></span><p><span data-zh>软骨发育异常体型让脊柱终身承压，瘫痪风险显著。</span><span data-en>The chondrodystrophic build loads the spine for life; paralysis risk is significant.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母有无脊椎影像？家族有无瘫痪病史？</span><span data-en><b>Ask:</b> spinal imaging of parents? Family history of paralysis?</span></p></div>
+      <div class="risk-card rv" data-sp="cat" style="--d:.3s"><span class="sp-chip sp-cat"><span data-zh>猫</span><span data-en>CAT</span></span><h4><span data-zh>缅因猫 · 布偶猫</span><span data-en>Maine Coon · Ragdoll</span></h4><span class="risk-tag"><span data-zh>肥厚型心肌病（HCM）</span><span data-en>Hypertrophic cardiomyopathy (HCM)</span></span><p><span data-zh>大型猫种高发的心脏病，是幼猫猝死风险之一。</span><span data-en>Common in large cat breeds; one of the causes of sudden death in young cats.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>父母心脏超声？是否携带 HCM 相关变异？</span><span data-en><b>Ask:</b> parents' echocardiogram? HCM-related variant status?</span></p></div>
+      <div class="risk-card rv" data-sp="dog" style="--d:.35s"><span class="sp-chip sp-dog"><span data-zh>犬</span><span data-en>DOG</span></span><h4><span data-zh>边境牧羊犬</span><span data-en>Border Collie</span></h4><span class="risk-tag"><span data-zh>柯利眼异常（CEA）· 癫痫</span><span data-en>Collie eye anomaly (CEA) · epilepsy</span></span><p><span data-zh>工作犬光环之下，同样有品种高发的遗传病。</span><span data-en>Under the working-dog halo, the same breed-typical inherited diseases.</span></p><p class="risk-ask"><span data-zh><b>该问：</b>CEA / TNS 等品种组合检测做了哪些？</span><span data-en><b>Ask:</b> which breed panels — CEA / TNS and the like — were run?</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section id="five" style="background:var(--paper2)">
+  <div class="wrap">
+    <div class="shead rv">
+      <span class="snum" data-zh>09 / 该看什么</span><span class="snum" data-en>09 / WHAT TO LOOK AT</span>
+      <h2 data-zh>五件真正该看的事</h2>
+      <h2 data-en>The five things actually worth looking at</h2>
+      <p class="slede">
+        <span data-zh>与其追问祖上拿过多少奖，不如把目光移到眼前这个具体的生命，和它背后具体的繁育方式上。</span>
+        <span data-en>Rather than asking how many prizes the ancestors won, turn your eyes to this specific animal in front of you — and the specific breeding practice behind it.</span>
+      </p>
+    </div>
+
+    <div class="five-row rv"><div class="five-num">01</div><div class="five-body">
+      <h3><svg><use href="#paw"/></svg><span data-zh>看自己，而不是先看宠物</span><span data-en>Look at yourself first, not the pet</span></h3>
+      <p><span data-zh>每天能投入多少时间？能否接受掉毛、叫声、拆家？住所稳定吗？家人同意吗？能否承担常规医疗和突发治疗？未来十多年搬家、结婚、生育、换城市，它怎么办？</span><span data-en>How much time can you give every day? Can you live with shedding, barking, destroyed furniture? Is your housing stable? Is your family on board? Can you cover routine care and emergency treatment? Through moves, marriage, children, new cities over the next fifteen years — what happens to it?</span></p>
+      <p class="five-key"><span data-zh>很多不幸不是因为宠物血统不好，而是<b>人从未认真评估自己是否适合饲养</b>。</span><span data-en>Many sad endings aren't because the pet's pedigree was bad, but because <b>the person never honestly assessed whether they were fit to keep one</b>.</span></p>
+    </div></div>
+    <div class="five-row rv"><div class="five-num">02</div><div class="five-body">
+      <h3><svg><use href="#paw"/></svg><span data-zh>看健康证据，而不是健康承诺</span><span data-en>Look at health evidence, not health promises</span></h3>
+      <p><span data-zh>根据品种风险查对应检测，核对报告主体、机构、日期与结果，必要时咨询独立兽医。警惕三种偷换概念：把「携带者」说成「已患病」；把「未检出某个变异」说成「绝无遗传病」；把「完成检查」说成「结果正常」。</span><span data-en>Check the screenings that match the breed's risks; verify the report's subject, lab, date, and results; consult an independent vet if needed. Watch for three bait-and-switches: "carrier" recast as "affected"; "clear of this variant" recast as "free of genetic disease"; "examined" recast as "results were normal".</span></p>
+      <p class="five-key"><span data-zh>OFA 的 CHIC 项目思路是<b>按品种风险组合多种筛查</b>，而不是把一张 DNA 报告当万能通行证。[3]</span><span data-en>The OFA's CHIC program embodies the right idea: <b>a panel of screenings matched to breed risk</b> — not one DNA report as an all-access pass. [3]</span></p>
+    </div></div>
+    <div class="five-row rv"><div class="five-num">03</div><div class="five-body">
+      <h3><svg><use href="#paw"/></svg><span data-zh>看性格和需求，而不是幼年外形</span><span data-en>Look at temperament and needs, not the baby face</span></h3>
+      <p><span data-zh>毛色会变、体型会变、幼态会消失，但运动需求、训练成本和行为问题会长期存在。观察眼前这个个体：它如何回应陌生人？面对声音和新环境能否恢复平静？是否愿意互动？有没有明显恐惧、攻击或刻板行为？</span><span data-en>Coat color changes, size changes, the baby fluff fades — but exercise needs, training costs, and behavior problems persist. Observe this individual: how does it respond to strangers? Can it settle after a noise or a new place? Does it want to interact? Any obvious fear, aggression, or stereotypies?</span></p>
+      <p class="five-key"><span data-zh>这些信息通常<b>比宣传册上的头衔更接近未来的真实生活</b>。</span><span data-en>This information usually <b>predicts your real future far better than the titles on the brochure</b>.</span></p>
+    </div></div>
+    <div class="five-row rv"><div class="five-num">04</div><div class="five-body">
+      <h3><svg><use href="#paw"/></svg><span data-zh>看成长环境，而不是精修照片</span><span data-en>Look at the rearing environment, not the retouched photos</span></h3>
+      <p><span data-zh>要求查看真实饲养场所、母体状态和幼宠互动方式。长期笼养、环境脏乱、同场动物过多、拒绝展示母体、幼宠精神状态异常——任何一条都该让你停下来。</span><span data-en>Ask to see the actual premises, the dam's condition, and how the young animals are handled. Long-term caging, filth, overcrowding, refusal to show the dam, listless youngsters — any one of these should stop you.</span></p>
+      <p class="five-key"><span data-zh>即使家谱漂亮，出生在拥挤、嘈杂、缺少互动的繁殖场，<b>早期行为发展依然会受影响</b>。[5]</span><span data-en>Even a beautiful pedigree can't undo a start in a crowded, noisy, interaction-starved breeding mill — <b>early behavioral development will still be shaped by it</b>. [5]</span></p>
+    </div></div>
+    <div class="five-row rv"><div class="five-num">05</div><div class="five-body">
+      <h3><svg><use href="#paw"/></svg><span data-zh>看它如何处理「卖不掉」和「养不了」</span><span data-en>Look at how they handle "unsold" and "can't keep"</span></h3>
+      <p><span data-zh>幼宠生病、出现遗传问题、买家将来无法继续饲养——对方会怎么处理？负责任的来源不会把交付当成责任的终点，会在合同里写清遗传病责任，并承诺协助接回或安置。</span><span data-en>If the animal falls ill, shows a genetic problem, or the buyer can no longer keep it — what happens? A responsible source doesn't treat handover as the end of responsibility: genetic-disease liability goes in the contract, and they promise to take the animal back or help rehome it.</span></p>
+      <p class="five-key"><span data-zh>回答是否具体，往往<b>比血统故事更能体现底线</b>。</span><span data-en>How concretely they answer <b>says more about their bottom line than any pedigree story</b>.</span></p>
+    </div></div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="wrap">
+    <div class="shead rv" style="text-align:center">
+      <span class="snum" data-zh>10 / 测验</span><span class="snum" data-en>10 / THE QUIZ</span>
+      <h2 data-zh>血统迷信指数测试</h2>
+      <h2 data-en>The pedigree-myth susceptibility test</h2>
+      <p class="slede" style="margin:0 auto">
+        <span data-zh>六句话，判断对错。测测营销叙事在你身上还剩多少效力。</span>
+        <span data-en>Six statements. True or false. Measure how much of the marketing narrative still works on you.</span>
+      </p>
+    </div>
+    <div class="quiz-stage rv">
+      <div id="quizPlay"></div>
+      <div class="quiz-final" id="quizFinal"></div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist" class="check">
+  <div class="wrap">
+    <div class="shead rv" style="text-align:center">
+      <span class="snum" data-zh>11 / 最后一关</span><span class="snum" data-en>11 / FINAL GATE</span>
+      <h2 data-zh>带它回家之前</h2>
+      <h2 data-en>Before you bring it home</h2>
+      <p class="slede" style="margin:0 auto">
+        <span data-zh>12 个问题，逐条打勾。这不是道德考试，是风险排查——勾不出来，就是答案。</span>
+        <span data-en>Twelve questions, checked one by one. This isn't a morality exam — it's a risk audit. If you can't check them, that's your answer.</span>
+      </p>
+    </div>
+
+    <div class="board rv">
+      <div class="stamp board-stamp go"><span data-zh>购买前必填</span><span data-en>FILL BEFORE PAYING</span></div>
+      <div class="ck-progress">
+        <span style="font-weight:900;font-size:.85rem;letter-spacing:.15em" data-zh>确认进度</span>
+        <span style="font-weight:900;font-size:.85rem;letter-spacing:.15em" data-en>CONFIRMED</span>
+        <div class="ck-bar"><div class="ck-fill" id="ckFill"></div></div>
+        <span class="ck-count"><span id="ckCount">0</span> / 12</span>
+      </div>
+
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我了解这种动物成年后的体型、寿命和日常需求</span><span data-en>I understand this animal's adult size, lifespan, and daily needs</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我的住房、时间、经济能力和家庭关系适合长期饲养</span><span data-en>My housing, time, finances, and family situation suit long-term keeping</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我能承担常规医疗，以及可能出现的高额治疗费用</span><span data-en>I can afford routine care — and the possibility of large emergency bills</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我看过真实饲养环境，而不仅是照片或直播片段</span><span data-en>I have seen the actual living conditions, not just photos or livestream clips</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我了解幼宠父母的健康和性格</span><span data-en>I know the health and temperament of the parents</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我拿到了针对常见遗传风险的有效检查资料，并理解检测范围与局限</span><span data-en>I have valid screening records for the common genetic risks, and understand the tests' scope and limits</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我核验了家谱近交信息；基因组近交数据只作补充，而非单一裁决标准</span><span data-en>I have checked the pedigree's inbreeding information; genomic COI is a supplement, not a sole verdict</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>幼宠达到适宜离乳、离开同窝动物的年龄</span><span data-en>The young animal has reached the proper age to leave its mother and littermates</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>卖方或机构完整说明了健康、行为及既往病史</span><span data-en>The seller or organization has fully disclosed health, behavior, and medical history</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>我没有因为「限时」「稀有」「最后一只」而仓促付款</span><span data-en>I have not rushed payment because of "limited time", "rare", or "last one left"</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>即使它长大后不好看、不听话或长期生病，我仍愿意负责</span><span data-en>Even if it grows up plain, disobedient, or chronically ill, I will still take responsibility</span></span></label>
+      <label class="ck"><input type="checkbox"><span class="ck-box"><svg viewBox="0 0 24 24"><use href="#ck"/></svg></span><span class="ck-text"><span data-zh>如果生活发生变化，我已有不以弃养为结局的预案</span><span data-en>If my life changes, I already have a plan that doesn't end in abandonment</span></span></label>
+
+      <div class="verdict" id="verdict" data-lv="low" aria-live="polite"></div>
+
+      <div class="ck-actions no-print">
+        <button class="btn" id="btnPrint"><span data-zh>打印清单</span><span data-en>Print</span></button>
+        <button class="btn" id="btnCopy"><span data-zh>复制进度</span><span data-en>Copy progress</span></button>
+        <button class="btn" id="btnReset"><span data-zh>清空重来</span><span data-en>Reset</span></button>
+      </div>
+      <p class="ck-saved no-print"><span data-zh>勾选会自动保存在本机浏览器，下次打开仍在。</span><span data-en>Your checks are saved in this browser and will be here next time.</span></p>
+    </div>
+
+    <div class="moral rv">
+      <h4><span data-zh>购买还是领养，都不是道德捷径</span><span data-en>Neither buying nor adopting is a moral shortcut</span></h4>
+      <p><span data-zh>领养值得鼓励，但它不是一句口号——部分救助动物有未知病史、行为创伤或特殊照护需求，同样需要专业评估、耐心磨合和长期投入。购买也不必被一概污名化，重视健康与福利的负责任繁育者，与宠物工厂有本质区别。原则只有一条：<b>不论通过哪种方式获得宠物，都不应支持虐待、过度繁殖、隐瞒疾病和冲动消费。</b></span><span data-en>Adoption deserves encouragement, but it isn't a slogan — many rescued animals carry unknown histories, trauma, or special care needs, and need professional assessment, patience, and long-term investment. Buying needn't be universally stigmatized either: a breeder who prioritizes health and welfare is a different species from a puppy mill. Only one principle holds: <b>however you acquire a pet, never support cruelty, overbreeding, concealed disease, or impulse buying.</b></span></p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <svg class="fp" style="width:120px;top:10%;right:8%;--r:20deg"><use href="#paw"/></svg>
+  <svg class="fp" style="width:70px;bottom:16%;right:22%;--r:-15deg;animation-delay:-4s"><use href="#paw"/></svg>
+  <svg class="fp" style="width:90px;top:40%;left:4%;--r:35deg;animation-delay:-7s"><use href="#paw"/></svg>
+  <div class="wrap">
+    <p class="cq rv" data-zh>选择宠物的本质，不是挑选一件血统最漂亮的<span class="rd">商品</span>，而是判断自己能否接住一个真实、复杂、会生病、会衰老、也会依赖你一生的<mark>生命</mark>。</p>
+    <p class="cq rv" data-en>Choosing a pet is not about picking the <span class="rd">product</span> with the prettiest pedigree — it's about judging whether you can hold a real, complicated <mark>life</mark> that will get sick, will grow old, and will depend on you for all of it.</p>
+    <p class="closing-sub rv" style="--d:.15s">
+      <span data-zh>一个成熟的饲养者，不会把「纯不纯」放在「健康不健康」之前，不会把「稀不稀有」放在「是否痛苦」之前，也不会把「值多少钱」放在「是否值得善待」之前。</span>
+      <span data-en>A mature keeper never puts "pure or not" before "healthy or not", "rare or not" before "suffering or not", or "what it's worth" before "whether it deserves care".</span>
+    </p>
+  </div>
+</section>
+
+<footer id="refs">
+  <div class="wrap" style="padding-bottom:40px">
+    <ol class="refs">
+      <h2 data-zh>参考文献</h2><h2 data-en>References</h2>
+      <li>Calboli FCF, et al. Population Structure and Inbreeding From Pedigree Analysis of Purebred Dogs. <i>Genetics</i>. 2008;179(1):593–601. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2390636/">PMC</a></li>
+      <li>Bellumori TP, et al. Prevalence of inherited disorders among mixed-breed and purebred dogs: 27,254 cases (1995–2010). <i>JAVMA</i>. 2013;242(11):1549–1555. <a href="https://pubmed.ncbi.nlm.nih.gov/23683021/">PubMed</a></li>
+      <li>Orthopedic Foundation for Animals. Canine Health Information Center (CHIC) Program. <a href="https://ofa.org/chic-programs/">CHIC</a></li>
+      <li>Morrill K, et al. Ancestry-inclusive dog genomics challenges popular breed stereotypes. <i>Science</i>. 2022;376(6592):eabk0639. <a href="https://www.science.org/doi/10.1126/science.abk0639">Science</a></li>
+      <li>Salonen M, et al. Breed, age, and social environment are associated with personality traits in dogs. <i>iScience</i>. 2023;26(5):106691. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10165416/">PMC</a></li>
+      <li>O'Neill DG, et al. Epidemiological associations between brachycephaly and upper respiratory tract disorders in dogs attending veterinary practices in England. <i>Canine Genetics and Epidemiology</i>. 2015;2:10. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4579368/">PMC</a></li>
+      <li>Liu N-C, et al. Whole-body barometric plethysmography characterizes upper airway obstruction in 3 brachycephalic breeds of dogs. <i>JVIM</i>. 2016;30(3):853–865. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4913582/">PMC</a></li>
+      <li>Gandolfi B, et al. A dominant TRPV4 variant underlies osteochondrodysplasia in Scottish fold cats. <i>Osteoarthritis and Cartilage</i>. 2016;24(8):1441–1450. <a href="https://pubmed.ncbi.nlm.nih.gov/27063440/">PubMed</a></li>
+      <li>Rorden C, et al. Radiographical Survey of Osteochondrodysplasia in Scottish Fold Cats caused by the TRPV4 gene variant. <i>Human Genetics</i>. 2021;140(11):1525–1534. <a href="https://pubmed.ncbi.nlm.nih.gov/34406467/">PubMed</a></li>
+    </ol>
+    <p class="disclaim">
+      <span data-zh>本站依据《买宠物只看血统，是一种错误的选择》一文整理。群体研究描述的是统计风险，不能替代对单只动物的临床诊断，也不能把某一研究人群的结果机械套用到所有地区和所有品种。</span>
+      <span data-en>Compiled from the essay "Choosing a pet by pedigree alone is a mistaken choice". Population studies describe statistical risk — they are no substitute for clinical diagnosis of an individual animal, and findings from one studied population should not be mechanically applied to every region or breed.</span>
+    </p>
+    <div class="fbot">
+      <a class="brand" href="#top"><svg><use href="#paw"/></svg><span><b><span data-zh>血统之外</span><span data-en>Beyond Pedigree</span></b><small style="color:rgba(245,241,230,.5)" data-zh>BEYOND PEDIGREE</small></span></a>
+      <span><span data-zh>可以欣赏品种特征，但血统最多是选择依据之一，绝不应成为压倒一切的标准。</span><span data-en>You can admire breed traits — but a pedigree is at most one factor among many, never the one that overrides everything.</span></span>
+      <span><span data-zh>© 2026 · 生命不是家谱</span><span data-en>© 2026 · A life is not a pedigree</span></span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部"><svg><use href="#paw"/></svg></button>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
